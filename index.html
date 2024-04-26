@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Warehouse Management System</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Warehouse Management System</h1>
+        </div>
+        <hr> <br> <br>
+        <div class="box">
+            <label for="">Item Name : </label>
+            <input type="text">
+            <label for=""> Quantity Item: </label>
+            <input type="number"> <br>
+            <label for=""><br> Price Item: </label>
+            <input type="number"> <br> <br>
+            <button type="button" class="button">Add Item</button>
+        </div>
+        <div class="table_box">
+            <table border="1px solid; ">
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Price </th>
+                </tr>
+                <tr>
+                    <td>HP Rog 17</td>
+                    <td>2</td>
+                    <td> Rs 100</td>
+                </tr>
+                <tr>
+                    <td>Asus Rog 17</td>
+                    <td>4</td>
+                    <td> Rs 500</td>
+                </tr>
+                <tr>
+                    <td>Oser Rog 17</td>
+                    <td>7</td>
+                    <td> Rs 900</td>
+                </tr>
+            </table> <br>
+            <button type="button" class="reset">Reset Item </button>
+        </div> <br> <br>
+        <hr>
+        <div class="itemform">
+            <form id="itemform"> <br><br>
+                <label for="item_name">Book Name:</label> <br>
+                <input type="text" id="item_name" required><br><br>
+                <label for="item_quantity">Quantity:</label><br>
+                <input type="number" id="item_quantity" placeholder="Quantity" required><br><br>
+                <button type="submit" class="submit">Add Item</button>
+            </form> <br>
+            <table id="Warehouse_table">
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Quantity</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body">
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <script src="first.js"></script>
+</body>
+
+</html>
